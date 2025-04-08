@@ -1,6 +1,7 @@
 🔁 Stepper Motor Control via Python GUI & Arduino (UART)
 This project enables real-time control of a stepper motor through a Python desktop application that communicates with an Arduino board over UART (Serial).
 
+
 🖥️ Python GUI Features:
 Built using Tkinter
 
@@ -23,9 +24,6 @@ Sends feedback over Serial (e.g., Direction: Going UP)
 
 Uses two Stepper instances to manage direction change
 
-Can be extended to include sensors or limit switches (pins 6 and 7)
-
-)
 
 🧩 Components Used:
 Arduino (Uno/Nano/ESP32)
@@ -38,19 +36,25 @@ USB Cable
 
 PC with Python 3.x
 
+
 🔌 Communication Protocol:
 UART Serial @ 9600 baud
 
 Python sends a command: '1'
 
 Arduino reads via Serial.read() and reacts accordingly
+
+
 📂 Project Structure:
+
 /stepper-uart-controller/
-├── arduino/
+├── arduino
 │   └── stepper_control.ino
 ├── python-app/
-│   └── gui_controller.py
+│   └── butt.py
 ├── README.md
+
+
 🚀 Getting Started:
 On the Arduino Side:
 Upload stepper_control.ino to your Arduino using the Arduino IDE.
@@ -61,15 +65,9 @@ Adjust stepsPerRevolution and motorRunTime if needed.
 
 On the Python Side:
 Install Python 3.x and pyserial:
-
-bash
-Copy code
-pip install pyserial
+      pip install pyserial
 Run the Python app:
-
-bash
-Copy code
-python gui_controller.py
+      python gui_controller.py
 Press the GUI button to toggle motor direction.
 
 📌 Notes:
