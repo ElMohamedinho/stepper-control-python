@@ -53,7 +53,7 @@ Arduino reads via Serial.read() and reacts accordingly
 │   └── stepper_control.ino
 
 ├── python-app
-│   └── butt.py
+│   └── control UART.py
 
 ├── README.md
 
