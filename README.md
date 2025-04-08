@@ -48,10 +48,13 @@ Arduino reads via Serial.read() and reacts accordingly
 📂 Project Structure:
 
 /stepper-uart-controller/
+
 ├── arduino
 │   └── stepper_control.ino
-├── python-app/
+
+├── python-app
 │   └── butt.py
+
 ├── README.md
 
 
